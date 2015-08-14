@@ -117,7 +117,7 @@ public class BuscaSequencialIndexada {
                     }
                 }
 
-                System.out.println("chave que busco = " + chaveQueBusco + " indices.get(j).getEntrada() = " + indices.get(j).getEntrada());
+                //System.out.println("chave que busco = " + chaveQueBusco + " indices.get(j).getEntrada() = " + indices.get(j).getEntrada());
 
                 flag = true;
             }
@@ -138,7 +138,7 @@ public class BuscaSequencialIndexada {
 
         int respostaDaBusca = Collections.binarySearch(vetorAuxiliar, chaveQueBusco);
 
-        if (respostaDaBusca != -1) {
+        if (respostaDaBusca > -1) {
             System.out.println("Achamos o valor ele está na posição = " + respostaDaBusca);
         } else {
             System.out.println("Não encontramos o valor nessa partição");
